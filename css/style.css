@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    /* font-family: 'Zen Antique', serif; */
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* begining of navbar  style*/
+
+
+.navlinks_container{
+    position: absolute;
+    top: 14%;
+    /* left: 0; */
+    
+    background-color: white;
+    list-style: none;
+    width: 70%;
+    border-radius: 5px;
+    padding: 1rem; 
+    box-shadow:0px 4px 41px -17px #ffff;
+
+      
+}
+nav{
+    /* border: 1px solid red; */
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    /* border: 1px solid yellow; */
+    /* line-height: 22px; */
+}
+.logo span{
+     display: block;
+     width: 100%;
+     text-align: center;
+}
+.logo .bigtextLogo{
+    line-height: 39px;
+    font-size: 3.7rem;
+    font-weight: 300;
+    letter-spacing: -4px;
+    text-align: left;    
+}
+
+.logo .mediumtextLogo{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.logo .smalltextLogo{
+    font-size: .5rem;
+    font-weight: 600;
+}
+
+.hamburger{
+    cursor: pointer;
+    font-size:2rem;
+}
+
+
+
+/* end of navbar  style*/
+
+/* hero_section style begin */
+.hero_section{
+    background: linear-gradient(
+        to right,
+        #131a26,
+        #192548,
+        #182972
+    );
+    color: #ffffff;
+    /* for now change the hieght later if u want */
+    height: 100vh;
+
+}
+/* hero_section style end */
