@@ -7,23 +7,66 @@
     /* font-family: 'Zen Antique', serif; */
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* variables */
+body{
+    --customGradient:linear-gradient(
+    to right,
+    #131a26,
+    #192548,
+    #182972);
+    --whiteColor:#ffffff;
+}
+/* variables */
+
+/* start of  unitlity classes */
+
+.btn{
+    display: block;
+    border: 1px solid black;  
+    background: transparent;
+    padding: .4rem .8rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.nav_search_icon{
+    color: black;
+}
+/*end of unitlity classes */
+
+
 
 /* begining of navbar  style*/
 
 
 .navlinks_container{
     position: absolute;
-    top: 14%;
-    /* left: 0; */
-    
+    top: 24%;
+    left: 10%;
+    /* transform: translate(0, -50%); */
     background-color: white;
     list-style: none;
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
     padding: 1rem; 
     box-shadow:0px 4px 41px -17px #ffff;
-
+    display: none;
       
+}
+
+
+
+.navlinks_container li{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1.1rem;
+}
+.navlinks_container li a{
+    color:  black;
+    text-decoration: none;
+}
+.navlinks_container li a:hover{
+
 }
 nav{
     /* border: 1px solid red; */
@@ -65,21 +108,127 @@ nav{
     font-size:2rem;
 }
 
-
+.btn.nav_btn{
+    margin: 4% auto;
+    
+}
 
 /* end of navbar  style*/
 
 /* hero_section style begin */
 .hero_section{
-    background: linear-gradient(
-        to right,
-        #131a26,
-        #192548,
-        #182972
-    );
+    background: var(--customGradient);
     color: #ffffff;
     /* for now change the hieght later if u want */
     height: 100vh;
 
 }
 /* hero_section style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:900px) {
+    nav{
+        /* border: 1px solid brown; */
+        padding-right: unset;
+        padding-left: 10%;
+      
+    }
+ 
+    .navlinks_container{
+        position: unset;
+        padding: unset;
+        background: transparent;
+        box-shadow: unset;
+        padding-bottom: 1rem;
+        /* border: 1px solid red; */
+        border-bottom: 2px solid var(--whiteColor);
+        border-radius: 0;
+        display: flex;
+     align-items: center;
+     /* justify-content: space-between; */
+     width: 70%;
+
+     
+    }
+    .navlinks_container li a{
+        color: var(--whiteColor);
+    }
+
+    .navlinks_container .navlink_group_a,.navlink_group_b{
+        display: flex;
+        align-items: center;
+        /* border: 1px solid white; */
+        /* justify-content: right; */
+        text-align: left;
+        
+    }
+    .btn.nav_btn{
+        color: var(--whiteColor);
+        border: 1px solid var(--whiteColor);
+        
+    }
+    .navlink_group_a{
+        justify-content: space-between;
+        width: 70%;
+        text-align: left;
+    }
+    .navlink_group_b{
+        width: 30%;
+        /* border: 1px solid red; */
+        /* padding: 0 .8rem; */
+        /* justify-content: left; */
+    }
+    .navlink_group_b>div{
+        display: flex;
+        width: 85%;
+        /* border: 1px solid yellow; */
+
+        align-items: center;
+    }
+    .navlink_group_b>div i{
+        display: block;
+        margin-left: 10px;
+    }
+    .navlink_group_b button{
+        /* align-self: left; */
+    }
+
+    .hamburger{
+        display: none;
+    }
+    .nav_search_icon{
+        color: var(--whiteColor);
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    nav{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .navlink_group_a{
+        width: 60%;
+
+    }
+    .navlink_group_b>div{
+        /* border: 1px solid yellow; */
+        width: 173.767px;
+    }
+    .navlink_group_b>div i{
+        margin-left: -40px;
+    }
+}
+
+
