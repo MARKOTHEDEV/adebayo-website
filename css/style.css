@@ -375,7 +375,7 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 900px;
+        max-width: 1000px;
         margin:  0 auto;
        
     }
@@ -383,6 +383,8 @@ nav{
     .conatainer_for_not_main_images{
         width:100%;
         margin: unset;
+        /* border: 1px solid red; */
+      
     }
     .section_b__image_container{
         margin: unset;
@@ -392,6 +394,7 @@ nav{
     .section_b__content_container{
         margin: unset;
         width: 50%;
+        
         /* border: 1px solid rgb(134, 82, 187); */
     }
 
@@ -404,6 +407,7 @@ nav{
     }
     .section_b__content_container__justtext{
         font-weight: 400;
+        font-size: 1.1rem;
     }
 
 }
@@ -456,7 +460,10 @@ nav{
         padding-left: 10%;
       
     }
- 
+    .conatainer_for_not_main_images{
+        width: 70%;
+        margin: 0 auto;
+    }
     .navlinks_container{
         position: unset;
         padding: unset;
