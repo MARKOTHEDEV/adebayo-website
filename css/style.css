@@ -18,7 +18,7 @@ body{
     --TextGradient:linear-gradient(
         to right,
         #131a26,
-        blue,
+        #131a26,
         blue);
 }
 /* variables */
@@ -30,6 +30,7 @@ body{
             background-clip: text;
             color: transparent;
 }
+
 .btn{
     display: block;
     border: 1px solid black;  
@@ -329,7 +330,10 @@ nav{
    
     text-align: center;
 
-
+    background:var(--TextGradient);
+    -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
 }
 
 
@@ -381,6 +385,9 @@ nav{
         width: 50%;
         margin: 0 auto;
     }
+    .section_c__card{
+        width: 70%;
+    }
 }
 @media screen and (min-width:700px) {
     .section_c__headText{
@@ -390,6 +397,15 @@ nav{
         font-weight: 900;
         margin: 0 auto;
         font-size: 1.6rem;
+        
+            background:linear-gradient(
+                to right,
+                #131a26,
+                blue,
+                blue);
+            -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
     }
     .section_c_card__image_container{
         width: 250px;
