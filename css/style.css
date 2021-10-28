@@ -14,11 +14,22 @@ body{
     #192548,
     #182972);
     --whiteColor:#ffffff;
+
+    --TextGradient:linear-gradient(
+        to right,
+        #131a26,
+        blue,
+        blue);
 }
 /* variables */
 
 /* start of  unitlity classes */
-
+.linear_text{
+    background: var(--TextGradient);
+    -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+}
 .btn{
     display: block;
     border: 1px solid black;  
@@ -315,12 +326,10 @@ nav{
    
 }
 .section_c__headText{
-    color: transparent;
+   
     text-align: center;
 
-    background: var(--customGradient);
-    -webkit-background-clip: text;
-            background-clip: text;
+
 }
 
 
@@ -359,6 +368,14 @@ nav{
 /* start of section_c */
 
 
+@media screen  and (min-width:500px){
+    .section_c__card{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (min-width:600px) {
     .conatainer_for_not_main_images{
         width: 50%;
@@ -366,6 +383,18 @@ nav{
     }
 }
 @media screen and (min-width:700px) {
+    .section_c__headText{
+        /* border: 1px solid red; */
+        text-align: left;
+        max-width: 1000px;
+        font-weight: 900;
+        margin: 0 auto;
+        font-size: 1.6rem;
+    }
+    .section_c_card__image_container{
+        width: 250px;
+        height: 250px;
+    }
     .hero_section .hero_section__container_content{
         font-size: 1.3rem;
     }
@@ -413,7 +442,23 @@ nav{
 }
 
 @media screen and (min-width:800px) {
-
+    .section_c__card{
+        width: 100%;
+       margin: unset;
+    }
+        .section_c__card_container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            max-width: 1000px;
+            margin: 5% auto;
+            margin-top: 3%;
+            gap: 50px;
+            /* border: 1px solid red; */
+        }
+        .section_c_card__image_container{
+            width: 150px;
+            height: 150px;
+        }
         .hero_section__container{
             display: flex;
             flex-direction: row-reverse;
