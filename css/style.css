@@ -510,7 +510,7 @@ padding: .8rem 1rem;
 
 /* start of section_f */
 .section_f{
-    border: 1px solid springgreen;
+    /* border: 1px solid springgreen; */
     background: var(--customGradient);
     color: var(--whiteColor);
 }
@@ -1027,6 +1027,9 @@ padding: .8rem 1rem;
     }
     .navlink_group_b>div i{
         margin-left: -40px;
+    }
+    .navlinks_container{
+        justify-content: unset;
     }
 }
 
