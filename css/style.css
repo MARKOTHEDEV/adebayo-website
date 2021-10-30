@@ -856,10 +856,7 @@ padding: .8rem 1rem;
         font-size: 1rem;
     }
 
-    .navlinks_container{
-        opacity: 1;
-        flex-direction: row;
-    }
+ 
     .section_c__card{
         width: 100%;
         margin: unset;
@@ -887,7 +884,7 @@ padding: .8rem 1rem;
             justify-content: space-around;
             /* border: 1px solid firebrick; */
             max-width: 850px;
-            margin:  10% auto;
+            margin:  40px auto;
         }
 
         .hero_section__container_image{
@@ -933,6 +930,8 @@ padding: .8rem 1rem;
         margin: 0 auto;
     }
     .navlinks_container{
+        opacity: 1;
+        flex-direction: row ;
         position: unset;
         padding: unset;
         background: transparent;
