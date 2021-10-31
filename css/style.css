@@ -1459,3 +1459,43 @@ footer{
 
 /* end  of media queries */
 /* end of styles for contact Page */
+
+
+
+
+/* events page */
+.event_page_container{
+    border: 1px solid transparent;
+    background: var(--customGradient);
+    /* background-color: red; */
+}
+.section_f.events_page{
+ 
+}
+.section_f.events_page .section_f__content_box{
+    /* margin-bottom: 3%; */
+    /* margin: unset; */
+
+}
+
+@media screen and (min-width:800px) {
+    .events_card_list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 20px;
+        padding: 1.2rem;
+        /* border: 1px solid red; */
+        margin: 5% auto;
+        max-width: 1000px;
+    }
+    .events_card_list .section_d_not_main_container{
+        margin: unset;
+        height: 100%;
+        width: 100%;
+        text-align: right;
+    }
+    .events_card_list .section_d_not_main_container .section_d_not_main_container__content_box{
+        padding-right: .8rem;
+    }
+}
