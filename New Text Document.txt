@@ -1,0 +1,17 @@
+
+
+
+
+footer  -- not done (should contain copyright and some social links)
+about page  -- not page
+contact page -- not done
+
+
+
+youtube api key  -- AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI
+channel id = UCE4yb0yAwSCS5bF7MzRueiw
+-- all the videos
+https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE4yb0yAwSCS5bF7MzRueiw&maxResults=10&order=date&type=video&key=AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI
+
+https://www.googleapis.com/youtube/v3/search?part=snippet&channelId={CHANNEL_ID}&maxResults=10&order=date&type=video&key=AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI
+
