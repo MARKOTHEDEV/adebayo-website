@@ -2,10 +2,10 @@
 
 
 
-footer  -- not done (should contain copyright and some social links)
 about page  -- not page
-contact page -- not done
 
+make the react Proj work fine
+use framer motion animations
 
 
 youtube api key  -- AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI
