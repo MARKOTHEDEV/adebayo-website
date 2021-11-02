@@ -15,3 +15,29 @@ https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE4yb0yAwSC
 
 https://www.googleapis.com/youtube/v3/search?part=snippet&channelId={CHANNEL_ID}&maxResults=10&order=date&type=video&key=AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI
 
+
+
+
+
+Notes:
+
+remove breif based text from card
+
+reomve the first not important grid-- in the event section
+
+00:00:53 -- remove without
+
+about.html --- about page  centrallzed the text
+
+
+
+loook at UTiva
+bench mark for utiva-- https://preview.colorlib.com/theme/academia/
+
+Portal E suite
+messageing app shoukd be specific to just a course alone
+generate certificate automatically
+
+alumin part:
+    like a job search page
+    gives record of what u are about 
