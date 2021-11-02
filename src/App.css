@@ -1364,9 +1364,27 @@ footer{
 }
 
 
+.aboutHeroCover *{
+  color: white;
+}
+.aboutHeroCover{
+  position: relative;
+}
+.aboutHeroCover::before,.slider_container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(19, 26, 38,.6),
+      rgba(25, 37, 72,.6),
+      rgba(24, 41, 114,.6));
+    width: 100%;
+    z-index: 4;
+    height: 100%;
 
-
-
+}
 
 
 

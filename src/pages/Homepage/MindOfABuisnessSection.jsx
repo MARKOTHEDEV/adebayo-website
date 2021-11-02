@@ -26,7 +26,7 @@ const MindOfABuisnessSection = ()=>{
                         <div className="main_image_conainter">
                                                     
                             <iframe className="section_b__image_container___main_image"
-                            src={`https://www.youtube.com/embed/${'blh2NomWQ3w'}`}>
+                            src={`https://www.youtube.com/embed/${'H7krcuw62yc'}`}>
                             </iframe> 
                             {/* <!-- <img className="section_b__image_container___main_image" src="./images/wearing_native.jpg" alt=""> --> */}
                         

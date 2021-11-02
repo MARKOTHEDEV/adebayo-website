@@ -10,6 +10,7 @@ import Gallery from "../../component/Gallery";
 import Testimonials from "../../component/Testimonials";
 import { Link } from "react-router-dom";
 
+
 const HomePage = ()=>{
 
     return (
@@ -22,6 +23,7 @@ const HomePage = ()=>{
 
             
         <HeroSection />
+
          
         <MindOfABuisnessSection />
         <HowCanIHElp />

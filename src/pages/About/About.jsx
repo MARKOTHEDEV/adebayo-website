@@ -7,18 +7,18 @@ const About = ()=>{
 
     return (
 
-        <div className="dark-vertion black-bg">
- <section className="mh-home image-bg home-2-img" id="mh-home">
+        <div  className="aboutHeroCover" style={{color:'white'}}>
+ <section className="mh-home image-bg home-2-img" id="mh-home" >
             <div className="img-foverlay img-color-overlay">
                 <div className="container">
-                    <div className="row section-separator xs-column-reverse vertical-middle-content home-padding">
-                        <div className="col-sm-6">
-                            <div className="mh-header-info">
+                    <div className="row section-separator xs-column-reverse vertical-middle-content home-padding" style={{zIndex:5,position:'relative'}}>
+                        <div className="col-sm-6" >
+                            <div className="mh-header-info" >
                                 <div className="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                     <span>Hello I'm</span>
                                 </div>
                                 
-                                <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">DB AdeBayo</h2>
+                                <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" >DB AdeBayo</h2>
                                 <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Ceo Tomation Solution</h4>
                                 
                                 <ul>
@@ -28,10 +28,10 @@ const About = ()=>{
                                 </ul>
                                 
                                 <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#" style={{color:'white'}}><i className="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" style={{color:'white'}}><i className="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" style={{color:'white'}}><i className="fa fa-github"></i></a></li>
+                                    <li><a href="#" style={{color:'white'}}><i className="fa fa-dribbble"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const About = ()=>{
         </section>
         
       
-        <section className="mh-about" id="mh-about">
+        <section className="mh-about" id="mh-about" style={{zIndex:5,position:'relative'}}>
             <div className="container">
                 <div className="row section-separator">
                     <div className="col-sm-12 col-md-6">
@@ -57,7 +57,7 @@ const About = ()=>{
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-6">
-                        <div className="mh-about-inner">
+                        <div className="mh-about-inner" style={{textAlign:'center'}}>
                             <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About AdeBayo</h2>
                             <p className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
                            Debo Adebayo, a Fellow of the  Business Process Management Institute (Nigeria). He is also an Accountant by training and a seasoned management consultant with years of experience in Business Process Management, Enterprise Transformation, and Performance Management. He is a business strategist as well as a coach who believes continuous learning is required for relevance. </p>
