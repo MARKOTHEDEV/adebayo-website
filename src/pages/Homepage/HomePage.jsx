@@ -9,7 +9,8 @@ import Resources from "../../component/resources";
 import Gallery from "../../component/Gallery";
 import Testimonials from "../../component/Testimonials";
 import { Link } from "react-router-dom";
-
+import Quotes from "../../component/Quotes"
+import Skits from "../../component/Skits";
 
 const HomePage = ()=>{
 
@@ -24,17 +25,19 @@ const HomePage = ()=>{
             
         <HeroSection />
 
-         
+            <br /><br />
         <MindOfABuisnessSection />
+        <HomePageEvents /><br /><br /><br /><br /><br />
         <HowCanIHElp />
 
-        <HomePageEvents />
 
 
         <Resources />
+        
+        <Skits />
 
+        <Quotes />
         <Gallery />
-
         <Testimonials />
 
 

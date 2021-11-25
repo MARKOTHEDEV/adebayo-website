@@ -5,8 +5,8 @@ import  heroImage from '../../public/hero_pics.jpg'
 const HowCanIHElp = ()=>{
 
     const sectioncCardInfo = [
-        {id:0,heading:`DB Adebayo Direct ${<br />} (One-On-One with DB)`,content:'Brief Based-Book for a paid engagement appointment with db via calendly',image:heroImage},
-        {id:0,heading:`Corporate Speaking  ${<br />} Engagement`,content:`invite DB to speak at your retreats/corporate events`,image:heroImage},
+        {id:0,heading:`You want to speack to db?`,content:'Click here to Speack with Db',image:heroImage},
+        {id:0,heading:`Corporate Speaking Engagement`,content:`invite DB to speak at your retreats/corporate events`,image:heroImage},
         {id:0,heading:`Training Engagement`,content:'Brief Based-Book for a paid engagement appointment with db via calendly ',image:heroImage},
     ]
 
@@ -15,8 +15,8 @@ const HowCanIHElp = ()=>{
 
            <>
                 {/* <!-- start of section_c --> */}
-                <div className="section_c">
-                    <h2 className="section_c__headText linear_text">HOW I CAN HELP YOU</h2>
+                <div className="section_c container">
+                    <h2 className="section_heading">HOW I CAN HELP YOU</h2>
                     
             
                     <section className="section_c__card_container">

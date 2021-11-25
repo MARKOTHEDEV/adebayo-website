@@ -4,12 +4,17 @@ import EveningWithBossImage from '../../public/eveningWiththeBoss.jpg';
 import BigHeadPics from '../../public/bigheadpics.jpg';
 import EventCard from '../../component/EventCard'
 
+import event1 from "../../public/event (1).jpeg"
+import event2 from "../../public/event (2).jpeg"
+import event3 from "../../public/event (3).jpeg"
+
 const Events = ()=>{
     const events_info =[
-        { id:0,heading:'An Evening with DB for Career Proffesional',content:'A bi-monthly in-person buiness talk show with career professional','image':heroImage},
-         {id:1,heading:`DB Adebayo Annual CEO'S Roundtable` ,content:'',image:heroImage},
-         {id:2,heading:'DB Adebayo Annual SMEs Submit',content:'',image:BigHeadPics},
-         {id:3,heading:'An Evening with DB for Career Proffesional',content:'A Bi-monthly in-person buisness talk show with entrepreneurs',image:BigHeadPics},
+{ id:0,heading:'An Evening with DB for Career Proffesional',content:'A bi-monthly in-person buiness talk show with career professional',
+'image':event1},
+{id:1,heading:`DB Adebayo Annual CEO'S Roundtable` ,content:'',image:event2},
+{id:2,heading:'DB Adebayo Annual SMEs Submit',content:'',image:event3},
+{id:3,heading:'An Evening with DB for Career Proffesional',content:'A Bi-monthly in-person buisness talk show with entrepreneurs',image:BigHeadPics},
      ]
 
     return (

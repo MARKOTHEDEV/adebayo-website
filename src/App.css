@@ -92,6 +92,18 @@ button.formBtn:hover{
   color: transparent;
   padding: 1rem 0;
 }
+
+.section_heading{
+   
+  text-align: left;
+  font-size: 1.4rem;
+  background: linear-gradient( to left, #040f22 85.5%,rgb(33, 33, 146) 15.4%);
+  -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          /* font-size: .9rem; */
+}
+
 /*end of unitlity classes */
 
 
@@ -352,15 +364,14 @@ nav.markoNav{
 }
 .section_b__image_container__not_main_image{
   border-radius: 10px;
-  background-color: #ebecec;
-  padding: 2rem;
+  /* background-color: #ebecec; */
+  padding: .7rem;
   position: relative;
   border-radius: 10px;
   /* border:1px solid red; */
 
 }
 .section_b__image_container__not_main_image::before{
-  /* background-color: red; */
   content: "\f04b";
   font-family: 'Font Awesome 5 Free';
   color:#c4c4c7;
@@ -381,9 +392,9 @@ nav.markoNav{
   /* border: 1px solid blue; */
 
   margin-top: 20%;
-  padding: 1rem .9rem;
+  /* padding: 1rem .9rem;
   padding-top: 0;
-  padding-left: 1.4rem;
+  padding-left: 1.4rem; */
   position: relative;
 }
 .horizontal_thick_line{
@@ -489,6 +500,11 @@ padding: .8rem 1rem;
 
 .list_of_not_main_content{
   padding: 1rem .9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
 .section_d_not_main_container{
   
@@ -649,6 +665,10 @@ padding: .8rem 1rem;
   opacity: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
+}
+.section_g_headText{
+  font-size: 1.4rem;
+
 }
 
 /* start of testimonial style */
@@ -1016,12 +1036,12 @@ footer{
   }
   .section_d__content_container{
       display: grid;
-      max-width: 1100px;
-      margin: 0 auto;
+      /* max-width: 1100px; */
+      /* margin: 0 auto; */
       justify-content: center;
       /* align-items: center; */
       /* border: 1px solid rgb(159, 97, 221); */
-      grid-template-columns:55% 45%;
+      grid-template-columns:20% 85%;
       grid-template-rows: minmax(200px,auto);
       /* height: 500px; */
       /* margin-bottom: 0; */
@@ -1202,6 +1222,14 @@ footer{
 
 }
 @media screen and (min-width:900px) {
+  .list_of_not_main_content{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .list_of_not_main_content .card{
+    width: 30%;
+  }
   nav.markoNav{
       /* border: 1px solid brown; */
       padding-right: unset;
@@ -1360,6 +1388,18 @@ footer{
   /* border: 1px solid yellow; */
 }
 
+.card{
+  min-height: 250px;
+  /* border: 1px solid red; */
+  /* height: 200px; */
+}
+/* .card.col-md-4{
+  width: 70%;
+}
+.card.col-md-8{
+  width: 30%;
+
+} */
 
 }
 

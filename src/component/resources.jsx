@@ -4,10 +4,7 @@ const Resources = ()=>{
 
     const  list_of_resource = [
         {id:0,content:"The Mind of Business with DB Adebayo TV Show",image:image1},
-        {id:0,content:'Job Prep Skits',image:image1},
-        {id:0,content:'Self development Skits for Entrepreneurs',image:image1},
         {id:0,content:'Thinking out loud (Quotes & insghts from DB)',image:image1},
-        {id:0,content:'Training Skits for Career Proffesionals',image:image1},
     ]
     return (
         <div className="section_f">

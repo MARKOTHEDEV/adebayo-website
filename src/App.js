@@ -8,7 +8,7 @@ import Nav from './component/nav';
 import Resources from './component/resources';
 import Events from './pages/Events/Events';
 import HomePage from './pages/Homepage/HomePage';
-
+import Registration from "./pages/Registration/Registration"
 import { BrowserRouter as Router,
   Switch,
   Route,
@@ -40,6 +40,10 @@ function App() {
 
             <Route path='/about' >
               <About />
+            </Route>
+
+            <Route path="/registration/:registration_for">
+              <Registration />
             </Route>
        </Switch>
         <Footer />

@@ -15,7 +15,7 @@ const Gallery =()=>{
     ]
     return (
     <div className="section_g"> 
-    <h2 className="section_g_headText small_headingCenter">Gallery</h2>
+    <h2 className="section_heading">Gallery</h2>
     
             
     <div className="gallery">
@@ -27,10 +27,10 @@ const Gallery =()=>{
                         {
                             eachImages.map(data=>{
                                 return (
-                                    <a href="#" target="_blank" className="gallery__link">
+                                    <a  className="gallery__link">
                                         <figure className="gallery__thumb">
                                         <img src={data} alt="gallery image" className="gallery__image" />
-                                        <figcaption className="gallery__caption">Image Caption</figcaption>
+                                        {/* <figcaption className="gallery__caption">Image Caption</figcaption> */}
                                         </figure>
                                 </a>
                                 )
