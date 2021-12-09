@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const MindOfABuisnessSection = ()=>{
     const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE4yb0yAwSCS5bF7MzRueiw&maxResults=10&order=date&type=video&key=AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI`
-    const [notMainVideos,setNotMainVideos] = useState([])
+    // const [notMainVideos,setNotMainVideos] = useState([])
     
     
     // useEffect(()=>{
