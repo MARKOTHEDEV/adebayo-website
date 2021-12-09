@@ -28,17 +28,58 @@ const HomePage = ()=>{
             <br /><br />
         <MindOfABuisnessSection />
         <HomePageEvents /><br /><br /><br /><br /><br />
-        <HowCanIHElp />
-
-
-
-        <Resources />
         
-        <Skits />
+        <div className="flex_components_for_skit_and_howcanIhelp_u" >
+            <div className="skits_section" >
+                <h2 className="section_heading">Skits</h2>
+                <div className="skit_card_container">
 
-        <Quotes />
+
+                <iframe className="skit_card" src="https://www.youtube.com/embed/z2noEjj-MX4?rel=0" 
+                            title="Db AdeBayo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;allowfullscreen"
+            allowfullscreen="true"
+                        >
+
+                            </iframe>
+
+                            <iframe className="skit_card" src="https://www.youtube.com/embed/yOVNQ-mhxSY?rel=0" 
+                            title="Db AdeBayo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="true">
+
+                            </iframe>                            <iframe className="skit_card" src="https://www.youtube.com/embed/eP4mxFQU0xk?rel=0" 
+                            title="Db AdeBayo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="true"
+                            >
+
+                            </iframe>  
+                 <iframe className="skit_card" src="https://www.youtube.com/embed/Hte2NtU8-hQ?rel=0" 
+                            title="Db AdeBayo" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="true"
+                           
+                           >
+
+                            </iframe>
+                    {/* <div className="skit_card"></div> */}
+                </div>
+            </div>
+
+
+        <HowCanIHElp />
+        </div>
+
+
+
+        {/* <Resources /> */}
+        
+        {/* <Skits /> */}
+
+        {/* <Quotes /> */}
         <Gallery />
-        <Testimonials />
+        {/* <Testimonials /> */}
 
 
             <br /><br/>

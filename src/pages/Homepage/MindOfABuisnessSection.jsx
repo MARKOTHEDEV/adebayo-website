@@ -6,21 +6,22 @@ const MindOfABuisnessSection = ()=>{
     const youtubeUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE4yb0yAwSCS5bF7MzRueiw&maxResults=10&order=date&type=video&key=AIzaSyC25rMPK8tc3iIeAigQtbtcDvfOKviD3TI`
     const [notMainVideos,setNotMainVideos] = useState([])
     
-    // useEffect(()=>{
+    
+    useEffect(()=>{
 
-    //     fetch(youtubeUrl)
-    //     .then(data=>data.json())
-    //     .then(data=>{
-    //         console.log(data)
-    //         setNotMainVideos(data.items.map((eachData)=>{
-    //             return {'Imageurl':eachData.snippet.thumbnails.high.url,'videoID':eachData.id.videoId}
-    //         }))
-    //     })
-    //     .catch(err=>{
-    //         console.log(err)
-    //     })
+        fetch(youtubeUrl)
+        .then(data=>data.json())
+        .then(data=>{
+            console.log(data)
+            setNotMainVideos(data.items.map((eachData)=>{
+                return {'Imageurl':eachData.snippet.thumbnails.high.url,'videoID':eachData.id.videoId}
+            }))
+        })
+        .catch(err=>{
+            console.log(err)
+        })
 
-    // },[])
+    },[])
 
     return (
 
@@ -78,8 +79,8 @@ notMainVideos.slice(0,3).map(({Imageurl,videoID},index)=>(
                         <div className="horizontal_thick_line"></div>
                         <h2 className="section_b__content_container__headingtext" style={{color:'black'}}>
                             <span>THE</span>
-                            <span>MIND </span>
-                            <span>OF</span>
+                            <span>MIND OF</span>
+                            {/* <span></span> */}
                             <span>BUSINESS</span>
                         </h2>
                         <p className="section_b__content_container__subtext" style={{color:'black'}}>with DB ~ Adebayo</p>

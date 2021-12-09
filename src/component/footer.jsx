@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 
 const Footer =()=>{
 
@@ -18,9 +19,11 @@ const Footer =()=>{
                 </div>
            
                 <div class="footer-navlinks">
+                {/* /about */}
                     <li><a href={"https://www.youtube.com/channel/UCE4yb0yAwSCS5bF7MzRueiw"}>DB-Adebayo TV</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><Link to="/events">Events</Link></li>
+                    <li><Link to="/contact">CONTACT</Link></li>
+                    <li><Link to="/about">About</Link></li>
                 </div>
            
             </div>
@@ -34,8 +37,9 @@ const Footer =()=>{
 
                         <div class="building_addresse_one">
                             <p class="building-addresse-info_text_thick">DB Adebayo</p>
-                            <p>3886 Wellington Street</p>
-                            <p>Ikeja,Lagos M9C 3J5</p>
+                            <p>No5, Adeboye Solanke Avenue,</p>
+                            <p>off Allen Avenue,Ikeja,Lagos.</p>
+                            {/* <p>Ikeja,Lagos M9C 3J5</p> */}
                         </div>
 
 
@@ -43,8 +47,8 @@ const Footer =()=>{
                             <p class="building-addresse-info_text_thick">
                                 Contact Us (Central Office)
                             </p>
-                            <p>P: 08162047348</p>
-                            <p>M: ogechuwkumatthew@gmail.com</p>
+                            <p>P: +234 803 338 8560</p>
+                            <p>M: info@dbadebayo.com</p>
                         </div>
 
 

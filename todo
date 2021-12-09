@@ -1,12 +1,7 @@
 
 
-erros :
-    ham is not working
-    slider in the main page is not working
 
 
-
-How can i help
 
 first card
 You want to speack to db? Click here to Speack with Db
@@ -27,3 +22,26 @@ remove the last three in the Recource->because they are Post
 
     T
 
+Educate Your Self( Model) With Our Skits Shold Get data from the back end:
+    link to  the yoube page
+
+Resources model:
+    post and link to Blog  post
+Quotes Model:
+Testimonial
+
+Onclick On a Registratiion-> to form ->pn send account details to mail
+Registratiion For EVENTS
+    Event Model
+    A Intro message
+    Title 
+    Picture
+
+
+
+using backend api
+    change event pics,--done
+    how can i help u -- still have not gotten from server-- done
+    on click of the gotten events from server we can dynamically change the form below
+    allow people to register for event
+    allow people to book for  db adebay .. check spelling also

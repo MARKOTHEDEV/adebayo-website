@@ -22,7 +22,10 @@ body{
 
 
 /* general form styleing */
-
+.App{
+  max-width: 2000px;
+  margin: 0 auto;
+}
 input,textarea{
   background-color: transparent;
   border: transparent;
@@ -112,14 +115,14 @@ button.formBtn:hover{
 
 
 .navlinks_container{
-  position: absolute;
-  top: 20%;
+  position: fixed;
+  top: 200px;
   left: 5%;
   /* transform: translate(0, -50%); */
   background-color: white;
   list-style: none;
   width: 90%;
-  height: 60%;
+  /* height: 60%; */
   border-radius: 5px;
   padding: 1rem; 
   box-shadow:0px 4px 41px -17px #ffff;
@@ -131,12 +134,13 @@ button.formBtn:hover{
   opacity: 0;
   /* transform: translateX(-100vw); */
   transition: opacity .6s;
-  /* display: none; */
+  display: none;
     
 }
 .navlinks_container.show{
   opacity: 1;
   animation: showPhoneNav 1s ease-in-out ;
+  display: flex;
 
   
 }
@@ -475,6 +479,22 @@ nav.markoNav{
   color: #2c2e35;
 }
 /* end of section_c */
+
+/* start of skit  style*/
+.skits_section{
+  /* border: 1px solid red; */
+  padding: .8rem 1.5rem;
+  
+}
+.skit_card{
+    background-color: whitesmoke;
+    padding: .2rem;
+    border-radius: 10px;
+    min-height: 200px;
+    margin: .9rem 0;
+}
+
+/*  end of skit style*/
 
 /* start of section_d */
 .section_d__main_content_container{
@@ -955,13 +975,15 @@ footer{
   }
 }
 @media screen and (min-width:700px) {
-
+.section_d{
+  margin-top: -118px;
+}
   .section_c__card{
       width: 80%;
      /* margin: unset; */
   }
   .section_c__headText{
-      /* border: 1px solid red; */
+      border: 1px solid red;
       text-align: left;
       max-width: 1000px;
       font-weight: 900;
@@ -1084,12 +1106,25 @@ footer{
       
   }
 
- 
+ .skit_card_container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 8px 10px;
+ }
+ .skit_card{
+   margin: revert;
+   width: 100%;
+   min-width: revert;
+ }
+
 }
 @media screen and (min-width:733px) {
 
 
-  
+  .skit_card{
+    min-height: 300px;
+    
+  }
   .footer-container{
       width: 90%;
       margin: 0 auto;
@@ -1131,12 +1166,13 @@ footer{
   }
       .section_c__card_container{
           display: grid;
-          grid-template-columns: repeat(3,1fr);
-          max-width: 1000px;
-          margin: 5% auto;
+          grid-template-columns: repeat(2,1fr);
+          /* max-width: 1000px; */
+          /* margin: 5% auto; */
           margin-top: 3%;
           gap: 50px;
           /* border: 1px solid red; */
+          width: 100%;
       }
       .section_c_card__image_container{
           width: 150px;
@@ -1222,6 +1258,11 @@ footer{
 
 }
 @media screen and (min-width:900px) {
+ 
+  .hero_section{
+    height: 72vh;
+    /* border: 1px solid red; */
+  }
   .list_of_not_main_content{
     flex-direction: row;
     align-items: center;
@@ -1356,11 +1397,36 @@ footer{
       text-align:  center;
       padding: .8rem;
   }
+
+
+  /* hey this styling i specfic to the Skits and How can i help you Being side By side*/
+ 
+ .flex_components_for_skit_and_howcanIhelp_u{
+  display:flex;
+  align-items: center;
+  /* border: 1px solid yellow; */
+ }
+  .skits_section{
+    width:50%;
+  }
+  .skit_card_container{
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid  green; */
+  }
+
+  .section_c{
+    width:50%;
+  }
 }
 
 @media screen and (min-width:1000px) {
+  .hero_section{
+  max-height:900px
+  }
   nav.markoNav{
-      max-width: 1400px;
+      /* max-width: 1400px; */
       margin: 0 auto;
   }
   .navlink_group_a{

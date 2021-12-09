@@ -8,7 +8,7 @@ const Nav = ()=>{
         hamburger == true?Sethamburger(false):Sethamburger(true)
     }
     return (
-        <nav className='markoNav'>
+        <nav className='markoNav' style={{width:"100%"}}>
         <div style={{border:"1px solid white",padding:".4rem",borderRadius:"10px"}}>
             <div className="logo">
                 <p className="logo" style={{color: "white"}}>
@@ -19,9 +19,10 @@ const Nav = ()=>{
             </div>
 
         </div>
-        <div  className={`hamburger `} onClick={toggleHam}>
-            <i className="fas fa-bars"></i>
-            {/* <!-- <i className="fas fa-times"></i> --> */}
+        <div  className={`hamburger `} onClick={toggleHam} style={{color:'white'}}>
+            
+            {hamburger?<i className="fas fa-times"></i>: <i className="fas fa-bars"></i>}
+            {/* <!--  --> */}
         </div>
        
         <div className={`navlinks_container ${hamburger==true? 'show':""}`} >
@@ -33,7 +34,7 @@ const Nav = ()=>{
                     <Link to='/about' >About</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><a href="https://www.youtube.com/channel/UCE4yb0yAwSCS5bF7MzRueiw" target="https://www.youtube.com/channel/UCE4yb0yAwSCS5bF7MzRueiw">DB-Adebayo TV</a></li>
-                <li><Link to='/resources'>Resources</Link></li>    
+                {/* <li><Link to='/resources'>Resources</Link></li>     */}
             </div>
 
             <div className="navlink_group_b">

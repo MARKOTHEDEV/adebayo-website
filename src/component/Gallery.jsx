@@ -3,14 +3,19 @@ import image1 from '../public/image1.jpg'
 import eveningWithBossImage from '../public/eveningWiththeBoss.jpg'
 import CallingImage from '../public/Screenshot_20200303-090732_Gallery.jpg'
 import hero_image from '../public/wearing_native.jpg'
-
+import image3 from "../public/Image 3.jpg"
+import image6 from "../public/Image 6.jpg"
+import Image4 from "../public/Image 4.jpg"
+import image8 from "../public/Image 8.jpg"
 const Gallery =()=>{
 
     const galleryImagesData =[
-        [image1,image2,eveningWithBossImage,CallingImage],
-        [image2,image1,CallingImage,eveningWithBossImage,],
-        [hero_image,image2,eveningWithBossImage,CallingImage],
-        [CallingImage,hero_image,image2,eveningWithBossImage,],
+        [image2,image1],
+        [eveningWithBossImage,image3],
+        [CallingImage,image6],
+        [hero_image,Image4],
+        [eveningWithBossImage,image8]
+       
         
     ]
     return (

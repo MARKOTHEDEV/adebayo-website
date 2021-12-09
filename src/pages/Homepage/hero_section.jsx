@@ -31,6 +31,8 @@ const HeroSection = ()=>{
                         <div className="blur_box two"></div>
                         <div className="blur_box three"></div>
                         <img src={heroImage} alt="" />
+                        <h1 style={{textAlign:"center"}}>DB~Adebayo</h1>
+        
                     </div>
 
                     <div className="hero_section__container_content" style={{color:'white',position:"relative",zIndex:10}} >
@@ -39,10 +41,12 @@ const HeroSection = ()=>{
                         </p>
                     
                         <div>
-                            <h1>DB~Adebayo</h1>
+                            <h1>
+                                {/* DB~Adebayo */}
+                                </h1>
                             <hr className="h1line"/></div>
                         </div>
-                    
+
                         
                 </div>
                 {/* <!-- end of hero_section__container --> */}
