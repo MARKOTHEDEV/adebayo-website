@@ -7,21 +7,21 @@ const MindOfABuisnessSection = ()=>{
     const [notMainVideos,setNotMainVideos] = useState([])
     
     
-    useEffect(()=>{
+    // useEffect(()=>{
 
-        fetch(youtubeUrl)
-        .then(data=>data.json())
-        .then(data=>{
-            console.log(data)
-            setNotMainVideos(data.items.map((eachData)=>{
-                return {'Imageurl':eachData.snippet.thumbnails.high.url,'videoID':eachData.id.videoId}
-            }))
-        })
-        .catch(err=>{
-            console.log(err)
-        })
+    //     fetch(youtubeUrl)
+    //     .then(data=>data.json())
+    //     .then(data=>{
+    //         console.log(data)
+    //         setNotMainVideos(data.items.map((eachData)=>{
+    //             return {'Imageurl':eachData.snippet.thumbnails.high.url,'videoID':eachData.id.videoId}
+    //         }))
+    //     })
+    //     .catch(err=>{
+    //         console.log(err)
+    //     })
 
-    },[])
+    // },[])
 
     return (
 
