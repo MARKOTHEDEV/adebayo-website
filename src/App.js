@@ -21,7 +21,7 @@ import { GlobalProvider,GlobalContext } from './context/GlobalState';
 
 function App() {
 const {isLoading} = useContext(GlobalContext);
-console.log(isLoading)
+// console.log(isLoading)
   return (
 
     <GlobalProvider>
