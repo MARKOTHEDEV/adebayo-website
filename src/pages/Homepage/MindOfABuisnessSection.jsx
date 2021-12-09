@@ -7,21 +7,21 @@ const MindOfABuisnessSection = ()=>{
     const [notMainVideos,setNotMainVideos] = useState([])
     
     
-    // useEffect(()=>{
+    useEffect(()=>{
 
-    //     fetch(youtubeUrl)
-    //     .then(data=>data.json())
-    //     .then(data=>{
-    //         console.log(data)
-    //         setNotMainVideos(data.items.map((eachData)=>{
-    //             return {'Imageurl':eachData.snippet.thumbnails.high.url,'videoID':eachData.id.videoId}
-    //         }))
-    //     })
-    //     .catch(err=>{
-    //         console.log(err)
-    //     })
+        fetch(youtubeUrl)
+        .then(data=>data.json())
+        .then(data=>{
+            console.log(data)
+            setNotMainVideos(data.items.map((eachData)=>{
+                return {'Imageurl':eachData.snippet.thumbnails.high.url,'videoID':eachData.id.videoId}
+            }))
+        })
+        .catch(err=>{
+            console.log(err)
+        })
 
-    // },[])
+    },[])
 
     return (
 
@@ -55,42 +55,39 @@ const MindOfABuisnessSection = ()=>{
 
 
 
-                    <div className="conatainer_for_not_main_images">
-                    {/* https://i.ytimg.com/vi/H7krcuw62yc/hqdefault.jpg */}
+                    {/* <div className="conatainer_for_not_main_images">
                         
 
-{
-notMainVideos.length !=0?
-notMainVideos.slice(0,3).map(({Imageurl,videoID},index)=>(
-<a href={`https://www.youtube.com/watch?v=${videoID}`} target="_blank"  className="section_b__image_container__not_main_image" 
-                        style={{cursor:"pointer"}} key={index}>
-                            <img src={Imageurl}  style={{'width':"100%","height":"100%"}} />
-</a>
-))
+                    {
+                    notMainVideos.length !=0?
+                    notMainVideos.slice(0,3).map(({Imageurl,videoID},index)=>(
+                    <a href={`https://www.youtube.com/watch?v=${videoID}`} target="_blank"  className="section_b__image_container__not_main_image" 
+                                            style={{cursor:"pointer"}} key={index}>
+                                                <img src={Imageurl}  style={{'width':"100%","height":"100%"}} />
+                    </a>
+                    ))
 
-:""
-}
-    
-                    </div>
-                    </div>
-                    {/* <!-- end of section_b__image_container --> */}
+                    :""
+                    }
+                        
+                                        </div> */}
+</div>
 
-                    <div className="section_b__content_container">
-                        <div className="horizontal_thick_line"></div>
-                        <h2 className="section_b__content_container__headingtext" style={{color:'black'}}>
-                            <span>THE</span>
-                            <span>MIND OF</span>
-                            {/* <span></span> */}
-                            <span>BUSINESS</span>
-                        </h2>
-                        <p className="section_b__content_container__subtext" style={{color:'black'}}>with DB ~ Adebayo</p>
-                        <p className="section_b__content_container__justtext">The Mind of Business with DB Adebayo is a televison
-                            show designed to promote knowledge sharing among the 
-                            community of entrepreneurs and careers
-                            professionals for the development of transgeneration business and the attainment
-                            of career leadership...
-                        </p>
-                    </div>
+                                        <div className="section_b__content_container">
+                                            <div className="horizontal_thick_line"></div>
+                                            <h2 className="section_b__content_container__headingtext" style={{color:'black'}}>
+                                                <span>THE</span>
+                                                <span>MIND OF</span>
+                                                <span>BUSINESS</span>
+                                            </h2>
+                                            <p className="section_b__content_container__subtext" style={{color:'black'}}>with DB ~ Adebayo</p>
+                                            <p className="section_b__content_container__justtext">The Mind of Business with DB Adebayo is a televison
+                                                show designed to promote knowledge sharing among the 
+                                                community of entrepreneurs and careers
+                                                professionals for the development of transgeneration business and the attainment
+                                                of career leadership...
+                                            </p>
+                                        </div>
             </div>
             {/* <!-- end of section_b --> */}
         </>
