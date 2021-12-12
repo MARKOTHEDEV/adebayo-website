@@ -4,8 +4,9 @@ import {useState,useEffect} from "react"
 import { useHistory } from 'react-router-dom';
 import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
-
 import axios from "axios"
+import '../../EventCard.css';
+
  const Registration =()=>{
     const {setIsloading} =useContext(GlobalContext)
 
@@ -17,13 +18,13 @@ import axios from "axios"
     const [triggerSend,setTriggerSend]=useState(0) 
     const [showCongratMessage,setShowCongratMessage] =useState(false)
     const history = useHistory()
+    // let EventDetail = []
 // let allEvents =[]
+// let 
     const { "axiosdata":allEvents,axioserrorMessage,isaxiosError}=useAxiosGet('https://db-adebayo-portfolio-backend.herokuapp.com/api/get_all_events/')
-
-const EventDetail = allEvents.filter(data=>registration_for==data.id)
-
-// console.log(data_registering_for)
-
+    let EventDetail = allEvents.filter(data=>registration_for==data.id)[0]
+    console.log(EventDetail)
+    // console.log(allEvents)
     const HandleSubmit=()=>{
         // e.preventDefault()
         setIsloading(true)
@@ -80,10 +81,69 @@ if(!isvalid){
     }    
 
 
-
+    
 
     return (
-        <div className="contact_container" style={{position:'relative'}}>
+
+        <>
+        <br />
+        {(!setIsloading || allEvents.length!=0)?(
+            <>
+            <article className="postcard light blue container" key={EventDetail.id} 
+            style={{margin:"0 auto"}}>
+                    <a className="postcard__img_link" >
+                        <img className="postcard__img" src={EventDetail.event_photo} alt="Image Title" />
+                    </a>
+                    <div className="postcard__text t-dark">
+                        <h1 className="postcard__title blue"><a href="#">{EventDetail.event_name}</a></h1>
+                        <div className="postcard__subtitle small">
+                            <time datetime="2020-05-25 12:00:00">
+                                <i className="fas fa-calendar-alt mr-2"></i>
+                                {EventDetail.sub_heading}
+                            </time>
+                        </div>
+                        <div className="postcard__bar"></div>
+                        <div className="postcard__preview-txt">
+                        {EventDetail.event_detail}
+                        </div>
+
+                    </div>
+        </article>
+
+        <div className="container" style={{color:"black"}}>
+            <br />
+
+                <h4>Target Audience:</h4>
+                {/* <li><p>Head of Marketing</p></li>
+                <li><p>Head of Human Resource Management & Admin</p></li> */}
+    <ol>
+{
+    EventDetail.event_targetDetail.map(data=>(
+                    <li><p>{data.target_name}</p>
+                        <ul>
+                        {data.allTargetExample.map(({name})=>(
+
+                            <li style={{marginLeft:"25px"}}><p>{name}</p></li>
+                        ))}
+                        </ul>
+                    </li>
+                    
+                    ))
+}
+                    </ol>
+                
+        </div>
+        </>
+        ):""}
+        
+        
+
+
+        <div className="registration_content">
+
+        </div>
+
+        <div className="contact_container" id='head' name="head"  style={{position:'relative'}}>
         
 
         <section style={{padding:"1rem","color":"whitesmoke",position:"absolute",top:"0",
@@ -91,7 +151,7 @@ if(!isvalid){
         backgroundColor:"rgb(67, 81, 44)",textAlign:"center","display":`${showCongratMessage?"flex":"none"}`,"justifyContent":"space-between"
         }}>
             <p style={{padding:0,margin:0}}>We have Received Your Request my team will get back to you... </p>
-            <i class="far fa-times-circle" style={{fontSize:"1rem"}}
+            <i className="far fa-times-circle" style={{fontSize:"1rem"}}
                 onClick={()=>setShowCongratMessage(false)}
             ></i>
         </section>
@@ -111,8 +171,8 @@ if(!isvalid){
                      placeholder="Full Name" required/>
                 </div>
 
-                                <div className="form_group">
-                    <input type="text" placeholder={(allEvents.length!=0)?allEvents[0].event_name:"Please Refresh this page"}  disabled/>
+                 <div className="form_group">
+                    <input type="text" placeholder={(allEvents.length!=0)?EventDetail.event_name:"Please Refresh this page"}  disabled/>
                 </div>
 
                 <div className="form_group">
@@ -138,6 +198,8 @@ if(!isvalid){
             </form>
         </div>
     </div>
+
+    </>
     )
 }
 

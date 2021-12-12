@@ -9,7 +9,7 @@ const Nav = ()=>{
     }
     return (
         <nav className='markoNav' style={{width:"100%"}}>
-        <div style={{border:"1px solid white",padding:".4rem",borderRadius:"10px"}}>
+        <div className="markoNav-logo-wrapper" style={{border:"1px solid white",padding:".4rem",borderRadius:"10px"}}>
             <div className="logo">
                 <p className="logo" style={{color: "white"}}>
                     <span className="bigtextLogo">DB</span>
@@ -35,6 +35,9 @@ const Nav = ()=>{
                 <li><Link to="/events">Events</Link></li>
                 <li><a href="https://www.youtube.com/channel/UCE4yb0yAwSCS5bF7MzRueiw" target="https://www.youtube.com/channel/UCE4yb0yAwSCS5bF7MzRueiw">DB-Adebayo TV</a></li>
                 {/* <li><Link to='/resources'>Resources</Link></li>     */}
+                <li><a target={"_blank"} href="https://www.facebook.com/dbadebayo/"><i class="fab fa-facebook"></i></a></li>
+                <li><a target={"_blank"} href="https://www.linkedin.com/in/db-adebayo-8809061a"><i class="fab fa-linkedin-in"></i>    </a></li>
+                <li><a target={"_blank"} href="https://www.instagram.com/dbadebayo/"><i class="fab fa-instagram"></i></a></li>
             </div>
 
             <div className="navlink_group_b">

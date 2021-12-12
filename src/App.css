@@ -20,7 +20,14 @@ body{
 }
 /* variables */
 
+input:invalid{
+  border-bottom: 3px solid rgb(59, 59, 122) !important;
 
+}
+.customGradient{
+  background-color: var(--customGradient);
+  background: var(--customGradient) !important;
+}
 /* general form styleing */
 .App{
   max-width: 2000px;
@@ -1258,9 +1265,12 @@ gap: 8px 10px;
 
 }
 @media screen and (min-width:900px) {
- 
+    .markoNav-logo-wrapper{
+      height: 100px;
+    }
   .hero_section{
-    height: 72vh;
+    height: 415px;
+    
     /* border: 1px solid red; */
   }
   .list_of_not_main_content{
@@ -1271,10 +1281,13 @@ gap: 8px 10px;
   .list_of_not_main_content .card{
     width: 30%;
   }
+  .hero_section__container{
+    margin: 0 auto;
+  }
   nav.markoNav{
       /* border: 1px solid brown; */
-      padding-right: unset;
-      padding-left: 10%;
+      padding: unset;
+      /* padding-left: 10%; */
     
   }
   .conatainer_for_not_main_images{
@@ -1288,7 +1301,7 @@ gap: 8px 10px;
       padding: unset;
       background: transparent;
       box-shadow: unset;
-      padding-bottom: 1rem;
+      padding: 0;
       /* border: 1px solid red; */
       border-bottom: 2px solid var(--whiteColor);
       border-radius: 0;
@@ -1407,17 +1420,22 @@ gap: 8px 10px;
   /* border: 1px solid yellow; */
  }
   .skits_section{
-    width:50%;
+    width:70%;
   }
   .skit_card_container{
     display: grid;
     gap: 10px 10px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     /* border: 1px solid  green; */
   }
 
   .section_c{
-    width:50%;
+    width:30%;
+   
+  }
+  .section_c__card_container{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1481,11 +1499,7 @@ gap: 8px 10px;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(
-      to right,
-      rgba(19, 26, 38,.6),
-      rgba(25, 37, 72,.6),
-      rgba(24, 41, 114,.6));
+    background: var(--customGradient);
     width: 100%;
     z-index: 4;
     height: 100%;

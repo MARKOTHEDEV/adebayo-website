@@ -24,6 +24,7 @@ const Footer =()=>{
                     <li><Link to="/events">Events</Link></li>
                     <li><Link to="/contact">CONTACT</Link></li>
                     <li><Link to="/about">About</Link></li>
+       
                 </div>
            
             </div>
@@ -56,12 +57,11 @@ const Footer =()=>{
                 {/* <!-- end of building addresse info --> */}
                 
                 {/* <!-- start of social addresse info --> */}
-                <div class="social-addresse-info">
-                        <a href="" class="socials_links"><img src={"./images/facebook_logo.svg"} alt="" /></a>
-                        <a href="" class="socials_links"><img src={"./images/youtube.svg"} alt="" /></a>
-                        <a href="" class="socials_links"><img src={"./images/twitter_logo.svg"} alt="" /></a>
-                        {/* <!-- <a href="" class="socials_links"><img src="./images/pinintrest.svg" alt=""></a> --> */}
-                        <a href="" class="socials_links"><img src={"./images/instagram.svg"} alt="" /></a>
+                <div class="social-addresse-info" >
+                <li><a target={"_blank"} href="https://www.facebook.com/dbadebayo/"><i style={{color:"whitesmoke"}}  class="fab fa-facebook"></i></a></li>
+                    <li><a target={"_blank"} href="https://www.linkedin.com/in/db-adebayo-8809061a"><i  style={{color:"whitesmoke"}} class="fab fa-linkedin-in"></i>    </a></li>
+                    <li><a target={"_blank"} href="https://www.instagram.com/dbadebayo/"><i  style={{color:"whitesmoke"}} class="fab fa-instagram"></i></a></li>
+
                 </div>
                 {/* <!-- end of social addresse info --> */}
 

@@ -10,8 +10,10 @@ const About = ()=>{
         <div  className="aboutHeroCover" style={{color:'white'}}>
  <section className="mh-home image-bg home-2-img" id="mh-home" >
             <div className="img-foverlay img-color-overlay">
-                <div className="container">
-                    <div className="row section-separator xs-column-reverse vertical-middle-content home-padding" style={{zIndex:5,position:'relative'}}>
+                <div className="container" style={{marginBottom:0}}>
+                    <div className="row section-separator xs-column-reverse vertical-middle-content " style={{zIndex:5,
+                        padding:"0",
+                        position:'relative'}}>
                         <div className="col-sm-6" >
                             <div className="mh-header-info" >
                                 <div className="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
@@ -19,25 +21,25 @@ const About = ()=>{
                                 </div>
                                 
                                 <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" >DB AdeBayo</h2>
-                                <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Ceo Tomation Solution</h4>
+                                {/* <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Ceo Tomation Solution</h4> */}
                                 
                                 <ul>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:">getemail@email.com</a></li>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i><a href="callto:">+12 986 987 7867</a></li>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i className="fa fa-map-marker"></i><address>37, Pollsatnd, New York, United State</address></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:">info@dbadebayo.com</a></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i><a href="callto:"> +234 803 338 8560</a></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i className="fa fa-map-marker"></i><address>No5, Adeboye Solanke Avenue,off Allen Avenue,Ikeja,Lagos.</address></li>
                                 </ul>
                                 
-                                <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                                {/* <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
                                     <li><a href="#" style={{color:'white'}}><i className="fa fa-facebook"></i></a></li>
                                     <li><a href="#" style={{color:'white'}}><i className="fa fa-twitter"></i></a></li>
                                     <li><a href="#" style={{color:'white'}}><i className="fa fa-github"></i></a></li>
                                     <li><a href="#" style={{color:'white'}}><i className="fa fa-dribbble"></i></a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                         <div className="col-sm-6">
                             <div className="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
-                                <div className="img-border">
+                                <div className="img-border" >
                                     <img src={heroImage} alt=""  className="img-fluid" />
                                 </div>
                             </div>
@@ -50,13 +52,13 @@ const About = ()=>{
       
         <section className="mh-about" id="mh-about" style={{zIndex:5,position:'relative'}}>
             <div className="container">
-                <div className="row section-separator">
-                    <div className="col-sm-12 col-md-6">
+                <div className="row">
+                    {/* <div className="col-sm-12 col-md-6">
                         <div className="mh-about-img shadow-2 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
                             <img src={heroImage} alt="" className="img-fluid" />
                         </div>
-                    </div>
-                    <div className="col-sm-12 col-md-6">
+                    </div> */}
+                    <div className="col-sm-12 col-md-12">
                         <div className="mh-about-inner" style={{textAlign:'center'}}>
                             <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About AdeBayo</h2>
                             <p className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">

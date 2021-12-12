@@ -44,10 +44,10 @@ const HomePageEvents = ()=>{
 
                     <motion.div className="card mb-3"
                      
-                    whileHover={{scale:1.1}}  whileTap={{scale:1}}
+                    // whileHover={{scale:1.1}}  whileTap={{scale:1}}
                         style={{maxWidth: "540px",borderRadius:"10px",color:'black'
                         ,maxHeight:"450px",}} key={event_data.id}
-                                onClick={(e)=>history.push(`/registration/${event_data.id}`)}
+                                // onClick={(e)=>history.push(`/registration/${event_data.id}/#head`)}
                         >
                         <div className=" ">
                             <div className="col-md-13">
@@ -57,7 +57,13 @@ const HomePageEvents = ()=>{
                             <div className="card-body">
                                 <h5 className="card-title">{event_data.event_name}</h5>
                                 <p className="card-text">{event_data.content}</p>
-                                <p className="card-text"><small className="text-muted">Click  To Register</small></p>
+
+
+            <a className="card-text" href={`/registration/${event_data.id}/`} ><small className="" 
+            
+style={{cursor:'pointer',color:"blue"}}>Click  To Register</small></a>
+
+
                             </div>
                             </div>
                         </div>

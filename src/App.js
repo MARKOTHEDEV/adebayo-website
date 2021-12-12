@@ -51,7 +51,7 @@ const {isLoading} = useContext(GlobalContext);
                   <About />
                 </Route>
 
-                <Route path="/registration/:registration_for">
+                <Route path="/registration/:registration_for/">
                   <Registration />
                 </Route>
           </Switch>

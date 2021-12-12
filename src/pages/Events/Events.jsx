@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 import { Link ,useHistory } from 'react-router-dom';
 import { useAxiosGet } from '../../component/useAxios';
 import { useState } from 'react';
-
+import '../../EventCard.css';
 
 
 const Events = ()=>{
@@ -31,11 +31,14 @@ const Events = ()=>{
 // // content:'A Bi-monthly in-person buisness talk show with entrepreneurs',image:BigHeadPics},
 //      ]
 const { "axiosdata":events_info,axioserrorMessage,isaxiosError}=useAxiosGet('https://db-adebayo-portfolio-backend.herokuapp.com/api/get_all_events/')
-
+// console.log(events_info)
     return (
-        <div class="events_card_list">
-       
-            {
+        // <div class="events_card_list">
+<section class="light">
+	<div class="container py-2">
+		<div class="h1 text-center text-dark" id="pageHeaderTitle"></div>
+
+        {
                 events_info.filter(({is_how_can_help})=>is_how_can_help!=true).map((event_data)=>{
 
                     return (
@@ -44,37 +47,65 @@ const { "axiosdata":events_info,axioserrorMessage,isaxiosError}=useAxiosGet('htt
                         // <EventCard {...event_data}  />
 
 
+		<article class="postcard light blue" key={event_data.id}>
+			<a class="postcard__img_link" >
+				<img class="postcard__img" src={event_data.event_photo} alt="Image Title" />
+			</a>
+			<div class="postcard__text t-dark">
+				<h1 class="postcard__title blue"><a href="#">{event_data.event_name}</a></h1>
+				<div class="postcard__subtitle small">
+					<time datetime="2020-05-25 12:00:00">
+						{/* <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020 */}
+					</time>
+				</div>
+				<div class="postcard__bar"></div>
+				<div class="postcard__preview-txt">
+                            {`${event_data.event_detail.slice(0,200)}...`}
+                </div>
+                <a className="card-text" href={`/registration/${event_data.id}/`} ><small className="" 
+            
+            style={{cursor:'pointer',color:"blue"}}>Click  To Register</small></a>
+
+
+			</div>
+		</article>
                         
-                    <motion.div className="card mb-3"
-                     
-                    whileHover={{scale:1.1}}  whileTap={{scale:1}}
-                        style={{maxWidth: "540px",borderRadius:"10px",color:'black'
-                        ,maxHeight:"450px",}} key={event_data.id}
-                        onClick={(e)=>history.push(`/registration/${event_data.id}`)}
-                        
-                        >
-                        <div className=" ">
-                            <div className="col-md-13">
-                            <img src={event_data.event_photo} className="img-fluid rounded-start" alt="" style={{height:"100%",objectFit:'cover'}}/>
-                            </div>
-                            <div className="col-md-13">
-                            <div className="card-body">
-                                <h5 className="card-title">{event_data.event_name}</h5>
-                                <p className="card-text">{event_data.content}</p>
-                                <p className="card-text"><small className="text-muted">Click  To Register</small></p>
-                            </div>
-                            </div>
-                        </div>
-                    </motion.div>
+                
                     // <>
                     )
                 })
             }
                     <br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-        </div>)
+		
+                    </div>
+</section>
+                    )
 }
+// </divs>
 
 
 
 export default Events
+
+
+{/* <motion.div className="card mb-3"
+                     
+whileHover={{scale:1.1}}  whileTap={{scale:1}}
+    style={{maxWidth: "540px",borderRadius:"10px",color:'black'
+    ,maxHeight:"450px",}} key={event_data.id}
+    onClick={(e)=>history.push(`/registration/${event_data.id}`)}
+    
+    >
+    <div className=" ">
+        <div className="col-md-13">
+        <img src={event_data.event_photo} className="img-fluid rounded-start" alt="" style={{height:"100%",objectFit:'cover'}}/>
+        </div>
+        <div className="col-md-13">
+        <div className="card-body">
+            <h5 className="card-title">{event_data.event_name}</h5>
+            <p className="card-text">{event_data.content}</p>
+            <p className="card-text"><small className="text-muted">Click  To Register</small></p>
+        </div>
+        </div>
+    </div>
+</motion.div> */}

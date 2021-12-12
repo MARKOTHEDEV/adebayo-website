@@ -63,6 +63,22 @@ const HomePage = ()=>{
                            >
 
                             </iframe>
+
+
+                            
+<iframe className="skit_card" src="https://www.youtube.com/embed/aaEGlTjCRiE?rel=0" 
+title="Db AdeBayo" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen="true"
+></iframe>
+
+<iframe className="skit_card" src="https://www.youtube.com/embed/O0x_9WPS7vY?rel=0" 
+title="Db AdeBayo" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen="true"
+></iframe>
+
+                            {/*  */}
                     {/* <div className="skit_card"></div> */}
                 </div>
             </div>
