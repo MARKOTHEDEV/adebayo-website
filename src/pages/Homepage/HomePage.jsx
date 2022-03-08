@@ -31,7 +31,7 @@ const HomePage = ()=>{
         
         <div className="flex_components_for_skit_and_howcanIhelp_u" >
             <div className="skits_section" >
-                <h2 className="section_heading">Skits</h2>
+                <h2 className="section_heading">DB TV</h2>
                 <div className="skit_card_container">
 
 

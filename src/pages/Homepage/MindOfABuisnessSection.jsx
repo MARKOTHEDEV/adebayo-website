@@ -37,7 +37,8 @@ const MindOfABuisnessSection = ()=>{
                             src={`https://www.youtube.com/embed/${'H7krcuw62yc'}`}>
                             </iframe>  */}
 
-                            <iframe className="section_b__image_container___main_image" src="https://www.youtube.com/embed/H7krcuw62yc?rel=0" 
+                            <iframe className="section_b__image_container___main_image" 
+                            src="https://www.youtube.com/embed/PMlZq2TghMc?rel=0" 
                             title="Db AdeBayo" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                              >
